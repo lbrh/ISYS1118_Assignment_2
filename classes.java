@@ -8,7 +8,7 @@ abstract class Customer {
 class GuestCustomer extends Customer {
     String guestId;
     
-    public void login() {} // Log in with customerId?
+    public void login() {} // NOTE: Log in with customerId?
     public void createAccount() {}
 }
 
@@ -44,6 +44,6 @@ class Cart {
     double totalPrice;
 
     public void addToCart(Product product) {}
-    // could also do stuff like remove from cart or change quantity/size etc.
+    // TODO: remove from cart/update quantity and whatnot? 
     public void checkout(ExternalAPIService pay) {}
 }
